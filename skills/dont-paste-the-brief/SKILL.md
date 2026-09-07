@@ -4,7 +4,7 @@ description: >
   Before accepting any agent deliverable — when output mirrors the brief, this
   chat/example, the crash site, or the latest human frame instead of the real job.
   Name the job, ban nearby junk, prove with a held-out check (channel / scope / cause).
-  Use when the user runs /dont-paste-the-brief.
+  Use when reviewing or shipping agent output, or when the user runs /dont-paste-the-brief.
 ---
 
 # Don't paste the brief

@@ -1,16 +1,27 @@
 # skills
 
-A Grok skills repository. Each subdirectory is one skill (`<name>/SKILL.md`).
+Agent skills for any coding agent (Claude Code, Cursor, Codex, Grok, OpenCode, and the rest). Each skill is `skills/<name>/SKILL.md` in the [Agent Skills](https://agentskills.io/) format.
 
-Grok loads this folder via `[skills] paths` in `~/.grok/config.toml`.
+## Install
+
+```bash
+npx skills add Nhuengzii/skills
+```
+
+The CLI detects installed agents and copies the skills into each one's skills directory. Add `-g` for user-wide install, `--all` to skip prompts.
+
+```bash
+npx skills add Nhuengzii/skills -g
+npx skills add Nhuengzii/skills --all
+npx skills add Nhuengzii/skills --skill dont-paste-the-brief
+```
 
 ## Skills
 
-| Skill | Command | What it does |
-| --- | --- | --- |
-| [dont-paste-the-brief](dont-paste-the-brief/) | `/dont-paste-the-brief` | Before accepting a deliverable: name the job, ban nearby junk, prove with a held-out check. |
+| Skill | What it does |
+| --- | --- |
+| [dont-paste-the-brief](skills/dont-paste-the-brief/) | Before accepting a deliverable: name the job, ban nearby junk, prove with a held-out check. |
 
 ## Add a skill
 
-1. Create `<name>/SKILL.md` with YAML frontmatter (`name`, `description`) and instructions.
-2. Reload with `/skills` or start a new session.
+Create `skills/<name>/SKILL.md` with YAML frontmatter (`name`, `description`) and instructions.
