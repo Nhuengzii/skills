@@ -1,6 +1,6 @@
 # skills
 
-Agent skills for any coding agent (Claude Code, Cursor, Codex, Grok, OpenCode, and the rest). Each skill is `skills/<name>/SKILL.md` in the [Agent Skills](https://agentskills.io/) format.
+Skills for coding agents, in the [Agent Skills](https://agentskills.io/) format.
 
 ## Install
 
@@ -8,13 +8,7 @@ Agent skills for any coding agent (Claude Code, Cursor, Codex, Grok, OpenCode, a
 npx skills add Nhuengzii/skills
 ```
 
-The CLI detects installed agents and copies the skills into each one's skills directory. Add `-g` for user-wide install, `--all` to skip prompts.
-
-```bash
-npx skills add Nhuengzii/skills -g
-npx skills add Nhuengzii/skills --all
-npx skills add Nhuengzii/skills --skill dont-paste-the-brief
-```
+That installs every skill here into the agents you have. Add `-g` for a user-wide install, or `--skill <name>` for one skill.
 
 ## Skills
 
@@ -24,4 +18,4 @@ npx skills add Nhuengzii/skills --skill dont-paste-the-brief
 
 ## Add a skill
 
-Create `skills/<name>/SKILL.md` with YAML frontmatter (`name`, `description`) and instructions.
+Put `skills/<name>/SKILL.md` in this repo with `name` and `description` frontmatter.
